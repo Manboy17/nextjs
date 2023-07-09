@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  background-color: #000;
+  outline: none;
+  color: #bbb;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.textarea {
+  padding: 20px;
+  border: 2px solid #ddd;
+  background-color: transparent;
+  color: #ddd;
+  outline: none;
+}
