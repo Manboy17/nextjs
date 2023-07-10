@@ -2,12 +2,24 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 
-const BlogPost = () => {
+async function getData(id) {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+const BlogPost = async ({ params }) => {
+  const data = await getData(params.id);
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <div className={styles.content}>
-          <h1 className={styles.title}>Title Test</h1>
+          <h1 className={styles.title}>{data.title}</h1>
           <p className={styles.desc}>Desc Test</p>
           <div className={styles.author}>
             <Image
