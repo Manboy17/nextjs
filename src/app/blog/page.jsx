@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Blog = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.post}>
+      <Link href="/blog/test1" className={styles.post}>
         <div className={styles.imageContainer}>
           <Image
             fill={true}
@@ -18,9 +19,9 @@ const Blog = () => {
           <h1 className={styles.title}>Title</h1>
           <p className={styles.desc}>Desc</p>
         </div>
-      </div>
+      </Link>
 
-      <div className={styles.post}>
+      <Link href="/blog/test2" className={styles.post}>
         <div className={styles.imageContainer}>
           <Image
             fill={true}
@@ -33,9 +34,9 @@ const Blog = () => {
           <h1 className={styles.title}>Title</h1>
           <p className={styles.desc}>Desc</p>
         </div>
-      </div>
+      </Link>
 
-      <div className={styles.post}>
+      <Link href="/blog/test3" className={styles.post}>
         <div className={styles.imageContainer}>
           <Image
             fill={true}
@@ -48,7 +49,7 @@ const Blog = () => {
           <h1 className={styles.title}>Title</h1>
           <p className={styles.desc}>Desc</p>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
