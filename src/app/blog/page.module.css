@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.imageContainer {
+  width: 400px;
+  height: 260px;
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

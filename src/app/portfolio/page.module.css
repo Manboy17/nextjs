@@ -1,0 +1,53 @@
+.mainText {
+  font-size: 110px;
+  margin: 20px 0;
+}
+
+.minText {
+  font-size: 35px;
+}
+
+.items {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.item {
+  border: 5px solid #bbb;
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.desc {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 600;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px;
+  background-color: skyblue;
+  color: black;
+  transition: 0.3s all;
+}
+
+.item:hover .desc {
+  background-color: transparent;
+  color: white;
+}
+
+.item:nth-child(1) {
+  background-image: url("/portfolio_1.jpeg");
+}
+
+.item:nth-child(2) {
+  background-image: url("/portfolio_2.jpeg");
+}
+
+.item:nth-child(3) {
+  background-image: url("/portfolio_3.jpeg");
+}
