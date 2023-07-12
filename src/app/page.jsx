@@ -17,7 +17,7 @@ export default function Home() {
         <Button href="/about" text="View Our Works" />
       </div>
       <div className={styles.item}>
-        <Image src={main} alf="main-image" className={styles.image} />
+        <Image src={main} alt="main-image" className={styles.image} />
       </div>
     </div>
   );

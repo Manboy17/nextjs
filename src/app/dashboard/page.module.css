@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  gap: 70px;
+}
+
+.posts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.create {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input {
+  background-color: transparent;
+  border: 1px solid #bbb;
+  padding: 10px 15px;
+}
+
+.textarea {
+  background-color: transparent;
+  padding: 10px 15px;
+}
+
+.send {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: skyblue;
+  font-size: 17px;
+  font-weight: 600;
+}
