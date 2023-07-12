@@ -74,8 +74,8 @@ const Dashboard = () => {
           {isLoading
             ? "Loading..."
             : data?.map((post) => (
-                <div className={styles.post}>
-                  <div className={styles.imageContainer} key={post._id}>
+                <div className={styles.post} key={post._id}>
+                  <div className={styles.imageContainer}>
                     <Image
                       src={post.image}
                       alt="image"
